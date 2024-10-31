@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: .2s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .2s;
+}
+body.active{
+    background-color: #111;
+    transition: .2s;
+}
+#toggle{
+    position: relative;
+    height: 150px;
+    width: 300px;
+    border-radius: 100px;
+    box-shadow: inset 2px 2px 7px rgb(0, 0, 0.2);
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+.ts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.4), 2px 2px 7px rgba(0, 0, 0, 0.4);;
+
+    transform: scale(.8);
+    transition: .2s;
+}
+
+
+#toggle.active .ts{
+    left: 150px;
+    box-shadow: inset 2px 2px 7px rgba(255, 255, 255, 0.3), 2px 2px 7px rgba(255, 255, 255, 0.1);
+    transition: .2s;
+}

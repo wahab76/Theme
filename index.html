@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div onclick="dm()" id="toggle">
+
+        <i class="ts"></i>
+    </div>
+    
+    <script>
+            
+            const toggle = document.getElementById('toggle');
+            const body = document.querySelector('body');
+            function dm() {
+                toggle.classList.toggle('active');
+                body.classList.toggle('active');
+            }
+    </script>
+</body>
+</html>
